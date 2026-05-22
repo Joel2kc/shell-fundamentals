@@ -1,0 +1,63 @@
+# Shell Fundamentals: To-Do List Manager
+
+A simple terminal-based to-do list manager written in Bash. It lets you add tasks, view them, and delete them by number, all from your terminal with nothing extra to install.
+
+## What It Does
+
+The script shows a menu every time you finish an action. You pick what you want to do by typing a number. Tasks are stored in a plain text file at ~/todo.txt so they stay saved even after you close the terminal.
+
+## How to Set It Up
+
+Clone the repository and move into the folder.
+
+[Screenshot 1: The cloned repo folder open in terminal]
+This shows the repo being pulled down from GitHub and the terminal moved into the project folder.
+
+Make the script executable:
+
+chmod +x todo.sh
+
+[Screenshot 2: The nano editor with the full script typed out]
+This shows the todo.sh script written out in nano before saving.
+
+[Screenshot 3: The chmod command being run]
+This gives the script permission to execute. No output means it worked.
+
+## Running the Script
+
+./todo.sh
+
+[Screenshot 4: The main menu appearing in the terminal]
+This is the main menu users see when they start the script. It shows the four available options.
+
+## Adding Tasks
+
+Pick option 2 from the menu and type a task when prompted.
+
+[Screenshot 5: Three tasks being added one after another]
+Each task gets a confirmation message saying it was added successfully.
+
+## Viewing Tasks
+
+Pick option 1 to see all saved tasks with their numbers.
+
+[Screenshot 6: The numbered task list displayed in the terminal]
+Tasks are shown with line numbers using the nl command. These numbers are what you use to delete a specific task.
+
+## Deleting a Task
+
+Pick option 3, then enter the number of the task you want to remove.
+
+[Screenshot 7: The delete confirmation showing which task was removed]
+The script confirms exactly which task was deleted so there is no confusion.
+
+## Exiting
+
+Pick option 4 to close the script cleanly.
+
+[Screenshot 8: The Goodbye message and script exit]
+The script prints Goodbye and returns you to the normal terminal prompt.
+
+## How It Works
+
+Tasks are saved with echo and appended to ~/todo.txt. Line numbers are shown using nl -ba. Deleting a task uses sed -i to remove that specific line from the file. The whole thing runs inside a while true loop that only stops when you pick option 4.
