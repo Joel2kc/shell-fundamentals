@@ -16,12 +16,10 @@ This shows the repo being pulled down from GitHub and the terminal moved into th
 
 Make the script executable:
 
-chmod +x todo.sh
+chmod +x todo.sh.
 
-[Screenshot 2: The nano editor with the full script typed out]
-This shows the todo.sh script written out in nano before saving.
-
-[Screenshot 3: The chmod command being run]
+[<img width="824" height="570" alt="kodekloud2 jpg" src="https://github.com/user-attachments/assets/552efc04-12da-4153-b606-9bd06ba14593" />
+The chmod command being run]
 This gives the script permission to execute. No output means it worked.
 
 ## Running the Script
