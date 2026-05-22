@@ -10,7 +10,8 @@ The script shows a menu every time you finish an action. You pick what you want 
 
 Clone the repository and move into the folder.
 
-[Screenshot 1: <img width="1787" height="914" alt="kodekloud1 jpg" src="https://github.com/user-attachments/assets/da18f509-027d-4b86-8310-34ac42e25716" />
+[<img width="1787" height="914" alt="kodekloud1 jpg" src="https://github.com/user-attachments/assets/da18f509-027d-4b86-8310-34ac42e25716" />
+
 The cloned repo folder open in terminal]
 This shows the repo being pulled down from GitHub and the terminal moved into the project folder.
 
